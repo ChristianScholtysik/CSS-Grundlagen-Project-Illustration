@@ -1,0 +1,154 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "merriweather";
+  src: url("../fonts/Merriweather-Regular.ttf");
+}
+
+@font-face {
+  font-family: "lato";
+  src: url("../fonts/Lato-Regular.ttf");
+}
+/* 
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: black;
+    color: white;
+  }
+} */
+
+html {
+  font-family: "merriweather";
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+  height: 80px;
+  font-family: "lato";
+}
+
+nav ul {
+  display: flex;
+  gap: 40px;
+  border: 1px solid red;
+}
+
+nav ul li {
+  list-style: none;
+  padding: 5px 5px;
+
+  border: 1px solid blue;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.1rem;
+
+  border: 1px solid green;
+}
+
+.sec-big {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 50px 10px 50px 200px;
+  margin-bottom: 14rem;
+}
+
+.sec-big-div {
+  width: 60vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+h3 {
+  font-family: "merriweather";
+  font-size: 4rem;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+.btn-sec-one {
+  display: flex;
+}
+.btn-sec-one button:nth-of-type(1) {
+  width: 150px;
+  padding: 0 26px;
+  background-color: black;
+  height: 55px;
+  margin: 0 4px;
+  color: #fff;
+  border-radius: 10px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.btn-sec-one button:nth-of-type(2) {
+  width: 150px;
+  padding: 0 26px;
+  background-color: rgb(255, 255, 255);
+  height: 55px;
+  margin: 0 4px;
+  color: #000000;
+  border-radius: 10px;
+
+  border-color: rgb(235, 235, 235);
+  font-size: 18px;
+  text-align: center;
+}
+
+.img-sec-big {
+  height: 60vh;
+}
+
+.sec-big2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 50px 250px 50px 200px;
+  margin-bottom: 14rem;
+}
+
+.text-above {
+  gap: 2vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex-basis: auto;
+
+  padding: 0 40vh;
+  text-align: center;
+  line-height: 1.8;
+  margin-bottom: 8vh;
+}
+.img-row {
+  display: flex;
+  justify-content: space-around;
+  height: 40vh;
+  margin-bottom: 8vh;
+}
+
+.img-gallery {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  gap: 100px;
+  padding: 0 15vh;
+}
+
+.img-gallery > img {
+  height: 40vh;
+}
