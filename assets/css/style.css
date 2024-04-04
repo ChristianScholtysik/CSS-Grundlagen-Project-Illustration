@@ -36,23 +36,18 @@ nav {
 
 nav ul {
   display: flex;
-  gap: 40px;
-  border: 1px solid red;
 }
 
 nav ul li {
   list-style: none;
   padding: 5px 5px;
-
-  border: 1px solid blue;
 }
 
 nav ul li a {
   text-decoration: none;
   color: black;
   font-size: 1.1rem;
-
-  border: 1px solid green;
+  margin: 0 15px;
 }
 
 .sec-big {
@@ -147,8 +142,68 @@ p {
   align-content: flex-start;
   gap: 100px;
   padding: 0 15vh;
+  margin-bottom: 15vh;
 }
 
 .img-gallery > img {
   height: 40vh;
+}
+
+.text-above-two {
+  gap: 2vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  padding: 0 55vh;
+  text-align: center;
+  line-height: 1.8;
+  margin-bottom: 8vh;
+}
+
+/* membership section */
+
+.membership-sec {
+  display: flex;
+  justify-content: center;
+}
+
+.membership {
+  background-color: #e0e7ed;
+  width: 13vw;
+  height: 48vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.membership > h3 {
+  margin-bottom: 20px;
+}
+.membership > h5 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.membership > p {
+  font-size: 1rem;
+  color: #949494;
+  margin-bottom: 20px;
+}
+
+.membership > ul {
+  list-style: none;
+  margin-bottom: 15px;
+}
+
+.membership > button {
+  background-color: #55acee;
+  width: 200px;
+  padding: 0 26px;
+  height: 40px;
+  margin: 10px 4px 0 4px;
+  color: white;
+  border-radius: 10px;
+  border: none;
 }
