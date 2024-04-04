@@ -16,31 +16,33 @@
               color: rgb(0, 0, 0);
             }
             .dark-mode,
-            dark-mode > nav > ul > li {
+            .dark-mode a {
               background-color: black;
               color: white;
             }
-            /* 
-            .light-mode {
-              background-color: white;
-              color: black;
-            } */
+
+            .red-mode,
+            .red-mode a,
+            .red-mode section div button {
+              background-color: rgb(239, 0, 0);
+              color: rgb(255, 255, 255);
+            }
           </style>
 
           <script>
             function lightMode() {
               var element = document.body;
-              element.classList.toggle("light-mode");
+              element.classList.toggle("red-mode");
             }
           </script>
-          <button onclick="lightMode()">LightMode</button>
+          <button onclick="lightMode()" class="redMode">RedMode</button>
           <script>
             function darkMode() {
               var element = document.body;
               element.classList.toggle("dark-mode");
             }
           </script>
-          <button onclick="darkMode()">DarkMode</button>
+          <button onclick="darkMode()" class="darkMode">DarkMode</button>
         </div>
         <ul>
           <li>

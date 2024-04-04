@@ -13,16 +13,36 @@
   font-family: "lato";
   src: url("../fonts/Lato-Regular.ttf");
 }
-/* 
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: black;
-    color: white;
-  }
-} */
 
 html {
   font-family: "merriweather";
+}
+
+.redMode {
+  width: 80px;
+  padding: 0 1cqh;
+  background-color: rgb(255, 0, 0);
+  height: 30px;
+  margin: 0 4px;
+  color: #ffffff;
+  border-radius: 10px;
+
+  border: none;
+  font-size: 12px;
+  text-align: center;
+}
+.darkMode {
+  width: 80px;
+  padding: 0 1cqh;
+  background-color: rgb(0, 0, 0);
+  height: 30px;
+  margin: 0 4px;
+  color: #ffffff;
+  border-radius: 10px;
+
+  border: none;
+  font-size: 12px;
+  text-align: center;
 }
 
 nav {
