@@ -6,42 +6,30 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
     <title>CSS-Grundlagen-Project Illustration</title>
   </head>
+  <style>
+    body {
+      background-color: white;
+      color: rgb(0, 0, 0);
+    }
+    .dark-mode,
+    .dark-mode a {
+      background-color: black;
+      color: white;
+    }
+
+    .red-mode,
+    .red-mode a,
+    .red-mode section div button {
+      background-color: rgb(239, 0, 0);
+      color: rgb(255, 255, 255);
+    }
+  </style>
   <body>
     <header>
       <nav>
         <div>
-          <style>
-            body {
-              background-color: white;
-              color: rgb(0, 0, 0);
-            }
-            .dark-mode,
-            .dark-mode a {
-              background-color: black;
-              color: white;
-            }
+          <button onclick="redMode()" class="redMode">RedMode</button>
 
-            .red-mode,
-            .red-mode a,
-            .red-mode section div button {
-              background-color: rgb(239, 0, 0);
-              color: rgb(255, 255, 255);
-            }
-          </style>
-
-          <script>
-            function lightMode() {
-              var element = document.body;
-              element.classList.toggle("red-mode");
-            }
-          </script>
-          <button onclick="lightMode()" class="redMode">RedMode</button>
-          <script>
-            function darkMode() {
-              var element = document.body;
-              element.classList.toggle("dark-mode");
-            }
-          </script>
           <button onclick="darkMode()" class="darkMode">DarkMode</button>
         </div>
         <ul>
@@ -52,131 +40,144 @@
           </li>
         </ul>
       </nav>
-      <section class="sec-big">
-        <div class="sec-big-div">
-          <h3>absurd illustrations that make sense</h3>
-          <p>
-            What about absurd illustrations for your projects? Take every user
-            on an individual journey through their own imagination.
-          </p>
-
-          <div class="btn-sec-one">
-            <button>Download</button>
-            <button>Subscribe</button>
-          </div>
-        </div>
-        <img
-          src="./assets/img/illustration1.gif"
-          alt="birne"
-          class="img-sec-big" />
-      </section>
-      <section class="sec-big2">
-        <img
-          src="./assets/img/illustration2.png"
-          alt="birne"
-          class="img-sec-big" />
-        <div class="sec-big-div">
-          <h3>real beauty resides in imperfection</h3>
-          <p>
-            In a digital era, we sometimes feel the need to interact with
-            something more human that will make us appreciate both the beauty
-            and the imperfection of something made by hand.
-          </p>
-        </div>
-      </section>
-
-      <section class="sec-big">
-        <div class="sec-big-div">
-          <h3>expressiveness is... the new black</h3>
-          <p>
-            This series of illustrations paradoxically combines absurdity and a
-            deep sense of childishness and naivety.
-          </p>
-        </div>
-        <img
-          src="./assets/img/illustration3.png"
-          alt="birne"
-          class="img-sec-big" />
-      </section>
-      <section>
-        <div class="text-above">
-          <h3>illustrations for applications</h3>
-          <p>
-            Welcome to my space for experiments! Look at this like a journey we
-            can take together every step of the way, beginning another chapter
-            with each new phase of the project development. And who knows where
-            it will take us?
-          </p>
-        </div>
-        <div class="img-row">
-          <img src="./assets/img/illustration4.png" alt="" />
-          <img src="./assets/img/illustration5.png" alt="" />
-          <img src="./assets/img/illustration6.png" alt="" />
-        </div>
-      </section>
-      <section>
-        <div class="text-above">
-          <h3>examples of use</h3>
-          <p>
-            Each illustration offers the possibility of limitless
-            interpretations and uses and everyone can give it its own meaning.
-            It depends only on each one's creativity and free spirit.
-          </p>
-        </div>
-      </section>
-      <section class="img-gallery">
-        <img src="./assets/img/illustration7.jpg" alt="" />
-        <img src="./assets/img/illustration8.jpg" alt="" />
-
-        <img src="./assets/img/illustration9.jpg" alt="" />
-        <img src="./assets/img/illustration10.jpg" alt="" />
-
-        <img src="./assets/img/illustration11.jpg" alt="" />
-        <img src="./assets/img/illustration12.jpg" alt="" />
-      </section>
-      <section>
-        <div class="text-above-two">
-          <h3>download illustrations</h3>
-          <p>
-            You're free to use these illustrations for both personal and
-            commercial projects. And if you want to make a human happy would be
-            nice to give credits by mentioning this website or be my supporter.
-            I have created a membership plan for people who love my works and
-            wish to support me and receive new artwork regularly.
-          </p>
-        </div>
-      </section>
-      <section class="membership-sec">
-        <div class="membership">
-          <h5>membership</h5>
-          <h3>$57</h3>
-          <p>per year</p>
-          <ul>
-            <li>No link required</li>
-            <li>Unlimited access</li>
-            <li>New content regularly</li>
-            <li>Colored versions</li>
-            <li>PNG format files</li>
-            <li>SVG format files</li>
-            <li>Premium support</li>
-          </ul>
-          <button>Become Member</button>
-        </div>
-      </section>
-      <section class="footer">
-        <h3>any absurd suggestions?</h3>
-        <div class="footer-div">
-          <p>Email</p>
-          <p>super@super.de</p>
-          <p>Follow me</p>
-        </div>
-        <div class="socialMedia">
-          <p>.fb</p>
-          <p>.ig</p>
-          <p>.tw</p>
-          <p>.yt</p>
-        </div>
-      </section>
     </header>
+    <section class="sec-big">
+      <div class="sec-big-div">
+        <h3>absurd illustrations that make sense</h3>
+        <p>
+          What about absurd illustrations for your projects? Take every user on
+          an individual journey through their own imagination.
+        </p>
+
+        <div class="btn-sec-one">
+          <button>Download</button>
+          <button>Subscribe</button>
+        </div>
+      </div>
+      <img
+        src="./assets/img/illustration1.gif"
+        alt="birne"
+        class="img-sec-big" />
+    </section>
+    <section class="sec-big2">
+      <img
+        src="./assets/img/illustration2.png"
+        alt="birne"
+        class="img-sec-big" />
+      <div class="sec-big-div">
+        <h3>real beauty resides in imperfection</h3>
+        <p>
+          In a digital era, we sometimes feel the need to interact with
+          something more human that will make us appreciate both the beauty and
+          the imperfection of something made by hand.
+        </p>
+      </div>
+    </section>
+
+    <section class="sec-big">
+      <div class="sec-big-div">
+        <h3>expressiveness is... the new black</h3>
+        <p>
+          This series of illustrations paradoxically combines absurdity and a
+          deep sense of childishness and naivety.
+        </p>
+      </div>
+      <img
+        src="./assets/img/illustration3.png"
+        alt="birne"
+        class="img-sec-big" />
+    </section>
+    <section>
+      <div class="text-above">
+        <h3>illustrations for applications</h3>
+        <p>
+          Welcome to my space for experiments! Look at this like a journey we
+          can take together every step of the way, beginning another chapter
+          with each new phase of the project development. And who knows where it
+          will take us?
+        </p>
+      </div>
+      <div class="img-row">
+        <img src="./assets/img/illustration4.png" alt="" />
+        <img src="./assets/img/illustration5.png" alt="" />
+        <img src="./assets/img/illustration6.png" alt="" />
+      </div>
+    </section>
+    <section>
+      <div class="text-above">
+        <h3>examples of use</h3>
+        <p>
+          Each illustration offers the possibility of limitless interpretations
+          and uses and everyone can give it its own meaning. It depends only on
+          each one's creativity and free spirit.
+        </p>
+      </div>
+    </section>
+    <section class="img-gallery">
+      <img src="./assets/img/illustration7.jpg" alt="" />
+      <img src="./assets/img/illustration8.jpg" alt="" />
+
+      <img src="./assets/img/illustration9.jpg" alt="" />
+      <img src="./assets/img/illustration10.jpg" alt="" />
+
+      <img src="./assets/img/illustration11.jpg" alt="" />
+      <img src="./assets/img/illustration12.jpg" alt="" />
+    </section>
+    <section>
+      <div class="text-above-two">
+        <h3>download illustrations</h3>
+        <p>
+          You're free to use these illustrations for both personal and
+          commercial projects. And if you want to make a human happy would be
+          nice to give credits by mentioning this website or be my supporter. I
+          have created a membership plan for people who love my works and wish
+          to support me and receive new artwork regularly.
+        </p>
+      </div>
+    </section>
+    <section class="membership-sec">
+      <div class="membership">
+        <h5>membership</h5>
+        <h3>$57</h3>
+        <p>per year</p>
+        <ul>
+          <li>No link required</li>
+          <li>Unlimited access</li>
+          <li>New content regularly</li>
+          <li>Colored versions</li>
+          <li>PNG format files</li>
+          <li>SVG format files</li>
+          <li>Premium support</li>
+        </ul>
+        <button>Become Member</button>
+      </div>
+    </section>
+    <section class="footer">
+      <h3>any absurd suggestions?</h3>
+      <div class="footer-div">
+        <p>Email</p>
+        <p>super@super.de</p>
+        <p>Follow me</p>
+      </div>
+      <div class="socialMedia">
+        <p>.fb</p>
+        <p>.ig</p>
+        <p>.tw</p>
+        <p>.yt</p>
+      </div>
+    </section>
+
+    <script>
+      function redMode() {
+        var element = document.body;
+        element.classList.toggle("red-mode");
+      }
+    </script>
+    <script>
+      function darkMode() {
+        var element = document.body;
+        element.classList.toggle("dark-mode");
+      }
+    </script>
   </body>
 </html>
